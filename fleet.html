@@ -36,7 +36,7 @@
             </div>
 
             <ul class="nav">
-                <li class="active">
+                <li>
                     <a href="index.html">
                         <i class="ti-panel"></i>
                         <p>Dashboard</p>
@@ -48,7 +48,7 @@
                         <p>Orders</p>
                     </a>
                 </li>
-                <li>
+                <li  class="active">
                     <a href="fleet.html">
                         <i class="ti-map-alt"></i>
                         <p>Fleet</p>
@@ -70,7 +70,7 @@
                         <span class="icon-bar bar2"></span>
                         <span class="icon-bar bar3"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Dashboard</a>
+                    <a class="navbar-brand" href="#">View Your Fleet</a>
                 </div>
 
                 <div class="collapse navbar-collapse">
@@ -92,35 +92,35 @@
             </div>
         </nav>
 
-        
+        <!-- Here, make the map dynamic and not necessarily static and stationed at KASI EXPRESS ADDRESS -->
+
+<!--         
         <div class="content">
-            <div class="container-fluid">
-                
-                <h5>Welcome, what would you like to do?</h5>
-                
-                <div class="row">
-
-                            <div class="col-md-6">
-                                <div class="card">
-                                    <br><a href="#">
-                                        <img src="assets/img/note.png"  style="width:100px; height:100px;" class="center">        
-                                        <br><p  style="text-align: center;">Register New Order</p>
-                                    </a><br>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="card">
-                                    <br><a href="fleet.html">
-                                        <img src="assets/img/delivery.png" style="width:100px; height:100px;" class="center">        
-                                        <br><p style="text-align:center;">View Your Fleet</p>
-                                    </a><br>
-                                </div>    
-                            </div>
+                <div class="container-fluid">
+                    <div class="card card-map">
+                        <div class="header">
+                            <h4 class="title">Google Maps</h4>
+                        </div>
+                        <div class="map">
+                            <div id="map"></div>
+                        </div>
+                    </div>
                 </div>
-                
-            </div>
+        </div> -->
+
+    <!-- Current Map Hack -->
+        <div class="content">
+                <div class="container-fluid">
+                    <div class="card card-map">
+                        <div class="header">
+                            <h4 class="title">Google Maps</h4>
+                        </div><br>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.9646393838884!2d-0.20500628581967018!3d5.572246435036731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9a6d87e55ff9%3A0xb2eec253b1d2e989!2sKasi+Express!5e0!3m2!1sen!2sgh!4v1526738300189" width="1030" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
         </div>
+    
+    
 
 
         <footer class="footer">
@@ -150,8 +150,15 @@
     <!--  Google Maps Plugin    -->
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
 
-    <!-- Main JS -->
-	<script src="assets/js/main.js"></script>
+    <!-- Paper Dashboard Core javascript and methods for Demo purpose -->
+    <script src="assets/js/main.js"></script>
+    
+
+    <script>
+            $().ready(function(){
+                demo.initGoogleMaps();
+            });
+    </script>
 
 	
 </html>
