@@ -99,7 +99,10 @@
                                 <h4 class="title">New Order: <strong>A17BUE</strong></h4>
                             </div><br>
                             <div class="content">
-                                <form onSubmit="alert('Form Submitted.');" >
+
+                                <!-- <form action="#" method="POST"> -->
+                                <form  onSubmit="alert('Form Submitted.');" >
+
                                     <div class="row">
                                         <div class="col-md-5">
                                             <div class="form-group">
@@ -107,12 +110,14 @@
                                                 <input type="text" class="form-control border-input" required>
                                             </div>
                                         </div>
+
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>Customer's Phone Number</label>
                                                 <input type="text" class="form-control border-input" required>
                                             </div>
                                         </div>
+
                                         <div class="col-md-4">
                                             <div class="form-group">
                                                 <label>Pickup Address</label>
@@ -125,15 +130,17 @@
                                             <div class="col-md-5">
                                                 <div class="form-group">
                                                     <label>Recipient's Name</label>
-                                                    <input type="text" class="form-control border-input" required>
+                                                    <input type="text" id="" name="" class="form-control border-input" required>
                                                 </div>
                                             </div>
+
                                             <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label>Recipient's Phone Number</label>
                                                     <input type="text" class="form-control border-input" required>
                                                 </div>
                                             </div>
+                                            
                                             <div class="col-md-4">
                                                 <div class="form-group">
                                                     <label>Dropoff Address</label>
@@ -157,10 +164,13 @@
                                     </div>
 
                                     <br>
+                                    
                                     <div>
                                         <button type="submit" class="btn btn-info btn-fill btn-wd">Submit</button>
                                     </div><br>
+                                    
                                     <div class="clearfix"></div>
+
                                 </form>
                             </div>
                         </div>

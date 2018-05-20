@@ -2756,6 +2756,12 @@ img.center {
   margin-right: auto;
 }
 
+.centera {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Date Picker */
 
 [type="date"] {
