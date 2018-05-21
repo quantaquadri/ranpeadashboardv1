@@ -1428,7 +1428,7 @@ textarea.form-control {
     border-bottom: 0 none; }
   .dropdown-menu > li > a:hover,
   .dropdown-menu > li > a:focus {
-    background-color: #66615B;
+    /* background-color: #66615B; */
     color: rgba(255, 255, 255, 0.7);
     opacity: 1;
     text-decoration: none; }
