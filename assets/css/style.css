@@ -2796,9 +2796,10 @@ input {
   color: #000;
   background-color: #fff;
   opacity: 1;
-  border-width: 2px;
+  border-width: 1px;
   font-size: 14px;
   font-weight: 500;
-  padding: 7px 10px;
-  border-color: #68B3C8;
+  padding: 7px 50px;
+  border-color: #CCC5B9;
+  border-radius: 4px;
 }
