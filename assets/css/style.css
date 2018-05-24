@@ -2803,3 +2803,8 @@ input {
   border-color: #CCC5B9;
   border-radius: 4px;
 }
+
+/* This controls the Order Description Header Icons */
+.card .headert {
+  padding: 20px 20px 0;
+}
