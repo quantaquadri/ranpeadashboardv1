@@ -24,6 +24,27 @@
     <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
     <link href="assets/css/themify-icons.css" rel="stylesheet">
 
+
+    <!-- This code enables the row table data to be clickable -->
+    <script type="text/javascript">
+        function ChangeColor(tableRow, highLight)
+        {
+        if (highLight)
+        {
+          tableRow.style.backgroundColor = '#C5C6B6';
+        }
+        else
+        {
+          tableRow.style.backgroundColor = 'white';
+        }
+      }
+    
+      function DoNav(theUrl)
+      {
+      document.location.href = theUrl;
+      }
+    </script>
+
 </head>
 <body>
 
@@ -158,7 +179,7 @@
                                             
                                         </thead>
                                         <tbody>
-                                            <tr>
+                                            <tr onmouseover="ChangeColor(this, true);" onmouseout="ChangeColor(this, false);" onclick="DoNav('#');">
                                                 <td>A1953F</td>
                                                 <td>19/05/2018</td>
                                                 <td>Kwame Eugene</td>
@@ -166,7 +187,8 @@
                                                 <td>Kwaku Mensah</td>
                                                 <td><strong>15 GHC</strong></td>
                                             </tr>
-                                            <tr>
+
+                                            <tr onmouseover="ChangeColor(this, true);" onmouseout="ChangeColor(this, false);" onclick="DoNav('#');">
                                                 <td>A1954G</td>
                                                 <td>19/05/2018</td>
                                                 <td>Ama Baffoe</td>
@@ -174,7 +196,8 @@
                                                 <td>Kwaku Mensah</td>
                                                 <td><strong>15 GHC</strong></td>
                                             </tr>
-                                            <tr>
+
+                                            <tr onmouseover="ChangeColor(this, true);" onmouseout="ChangeColor(this, false);" onclick="DoNav('#');">
                                                 <td>A1955H</td>
                                                 <td>19/05/2018</td>
                                                 <td>Kwame Kwasi</td>
@@ -182,7 +205,8 @@
                                                 <td>Kwaku Mensah</td>
                                                 <td><strong>25 GHC</strong></td>
                                             </tr>
-                                            <tr>
+
+                                            <tr onmouseover="ChangeColor(this, true);" onmouseout="ChangeColor(this, false);" onclick="DoNav('#');">
                                                 <td>A1956J</td>
                                                 <td>19/05/2018</td>
                                                 <td>Kweku Klu</td>
